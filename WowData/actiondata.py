@@ -6,7 +6,7 @@ from funcs import key_in_lines_in_file
 path = sg.popup_get_file('请选择有效的Tradeskillmaster.lua文件')
 readfile=open('{}'.format(path),"r",encoding="UTF-8")
 f1 = readfile.readlines()
-itemID=pd.read_excel('itemID.xlsx',index_col=0)
+itemID=pd.read_excel('./itemID.xlsx',index_col=0)
 itemIDs = pd.DataFrame(itemID)
 finaldata = pd.DataFrame()
 key = 'itemString,minBuyout,marketValue,numAuctions,quantity,lastScan'
